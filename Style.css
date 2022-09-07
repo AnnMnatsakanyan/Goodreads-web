@@ -17,7 +17,7 @@
 
 .main_columns_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 body,
@@ -28,6 +28,7 @@ h2 {
 
 p {
   margin: 18px 0;
+  line-height: 1.5;
 }
 
 h2 {
@@ -66,7 +67,12 @@ h3 {
   margin-bottom: 8px;
 }
 
-
+main {
+  margin-left:10px; 
+  padding: 15px 0;
+  background-image: url(/Images/Main_bg.png);
+  background-repeat: repeat-x;
+}
 
 /* Header */
 
@@ -87,12 +93,186 @@ header {
 
 .logo {
   height: 65px;
-  padding: 10px 5px 0;
+  padding: 14px 10px;
   }
 
 .Fav_book_img {
   padding:50px 0 0 88px;
 }
+
+/* Questions Section */
+
+.search_book {
+  margin:25px 0;
+}
+
+.questions_container {
+  display: flex;
+  justify-content:flex-start;
+  gap:32px;
+  margin-left:0;
+}
+
+.question_1,
+.question_2 {
+  width:280px;
+} 
+
+.answer {
+  color: #333333;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato";
+}
+
+/* Discovery Section */
+
+.discovery_box {
+  border-radius: 10px;
+  padding: 15px 0 20px 0;
+  background-color: #f4f2e9;
+}
+
+.discovery h2 {
+  margin: 0 0 15px 15px;
+}
+
+.books_container {
+  display: flex;
+  justify-content: space-between;
+  height: 170px;
+  margin-top: 20px;
+  background-image: url(/Images//discovery_bg.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.loved_books_container img {
+  height: 120px;
+  margin: 0 12px 0 0;
+}
+
+.loved_books_container p,
+.discovered_book_container p {
+  font-size: 12px;
+  margin:0 0 15px 0;
+}
+
+.loved_books_container {
+  margin-left: 15px;
+}
+
+.discovery_arrow {
+  height: 80px;
+  margin-top:80px;
+  margin-right: 5px;
+}
+
+.discovered_book_container {
+  width: 190px;
+  margin-right: 10px;
+}
+
+.disovered_book {
+  float: left;
+  margin-right: 5px;
+}
+
+.dicovered_book_description {
+  font-weight: 900;
+}
+
+/* Search Book Section */
+
+.search_input_container {
+  position: relative;
+}
+
+input {
+  padding: 5px 24px 5px 5px;
+  margin: 12px 0;
+  border-radius: 5px;
+  background-color: white;
+  width: 300px;
+  border: 1px solid #999;
+}  
+
+input:focus {
+  outline: #DCD6CC 1px solid;
+}
+
+.magnifying_glass_container {
+  position:absolute;
+  right: 326px;
+  bottom:14px;
+}
+
+.book_genres {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 82px;
+}
+
+li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Quotes Section */
+
+.quotes {
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.quotes_container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.quote_author {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.quote_authors p {
+  margin:0;
+}
+
+.author_img {
+  float: left;
+  height: 76px;
+  margin-right: 10px;
+}
+
+/* Best Book Award Section */
+
+.best_books {
+  margin-bottom: 24px;
+}
+
+.awards_container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.awards_container ul {
+  flex:1;
+}
+
+
+.awards_li {
+  margin: 0.5em;
+}
+
+.awards_img {
+  padding-top: 20px; 
+}
+
+/* Right Section */
+
+/* Sign in section  */
 
 .sign_in_section {
   position: sticky;
@@ -101,12 +281,12 @@ header {
   display: flex;
   flex-direction: column;
   padding:24px;
-  margin: 24px 16px 0 0;
+  margin: 16px 16px 0 -16px;
   border: 1px solid rgb(219, 219, 219) ;
   border-radius: 10px;
  } 
 
- .sign_in_section a:hover {
+ .sign_in_buttons a:hover {
   text-decoration: none;
  }
 
@@ -211,174 +391,6 @@ header {
   border-top: 1px solid #D8D8D8;
 }
 
-main {
-  margin-left:10px; 
-  padding-top: 15px;
-  background-image: url(/Images/Main_bg.png);
-  background-repeat: repeat-x;
-}
-
-/* Questions Section */
-
-.search_book {
-  margin:25px 0;
-}
-
-.questions_container {
-  display: flex;
-  justify-content:flex-start;
-  gap:32px;
-  margin-left:0;
-}
-
-.question_1,
-.question_2 {
-  width:280px;
-} 
-
-.answer {
-  color: #333333;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Lato";
-}
-
-/* Discovery Section */
-
-.discovery_box {
-  border-radius: 10px;
-  padding: 15px 0 20px 0;
-  background-color: #f4f2e9;
-}
-
-.discovery h2 {
-  margin: 0 0 15px 15px;
-}
-
-.books_container {
-  display: flex;
-  justify-content: space-between;
-  height: 170px;
-  margin-top: 20px;
-  background-image: url(/Images//discovery_bg.png);
-  background-position: bottom;
-  background-repeat: repeat-x;
-}
-
-.loved_books_container img {
-  height: 120px;
-  margin: 0 12px 0 0;
-}
-
-.loved_books_container p,
-.discovered_book_container p {
-  font-size: 12px;
-  margin:0 0 15px 0;
-}
-
-.loved_books_container {
-  margin-left: 15px;
-}
-
-.discovery_arrow {
-  height: 80px;
-  margin-top:80px;
-  margin-right: 5px;
-}
-
-.discovered_book_container {
-  width: 190px;
-  margin-right: 10px;
-}
-
-.disovered_book {
-  float: left;
-  margin-right: 5px;
-}
-
-.dicovered_book_description {
-  font-weight: 900;
-}
-
-/* Search Book Section */
-
-.search_input_container {
-  position: relative;
-}
-
-input {
-  padding: 5px 24px 5px 5px;
-  margin: 12px 0;
-  border-radius: 5px;
-  background-color: white;
-  width: 300px;
-  border: 1px solid #999;
-}  
-
-input:focus {
-  /* outline: none;  */
-  outline: #DCD6CC 1px solid;
-}
-
-.magnifying_glass_container {
-  position:absolute;
-  right: 344px;
-  bottom:14px;
-}
-
-.book_genres {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 82px;
-}
-
-li {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.quotes {
-  margin: 24px 0;
-  font-size: 14px;
-}
-
-.quotes_container {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 100px;
-}
-
-.quote_author {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.quote_authors p {
-  margin:0;
-}
-
-.author_img {
-  float: left;
-  height: 76px;
-  margin-right: 10px;
-}
-
-.awards_container {
-  display: flex;
-  justify-content: space-between;
-  line-height: 2;  
-}
-
-.awards_li {
-  margin: 0.8em 0;
-}
-
-.awards_img {
-  padding: 10px 20px 0px 0px;
-}
-
-/* Right Section */
-
    /* Ad */
 
 .ad {
@@ -481,7 +493,7 @@ footer {
 .footer_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   flex:1;
   max-width: 1220px;
   margin-inline: auto;
@@ -509,7 +521,7 @@ footer {
 
 .footer_container a {
   color: #382110;
-  margin: 8px 8px 0 0;
+  margin: 8px 0;
 }
 
 .footer_nav div {
