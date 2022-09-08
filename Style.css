@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 * {
   box-sizing: border-box;
@@ -20,9 +20,7 @@
   justify-content: space-around;
 }
 
-body,
-h1,
-h2 {
+h1 {
   margin:0 auto;
 }
 
@@ -32,7 +30,7 @@ p {
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   color: #000;
   font-size: 18px;
 }
@@ -47,11 +45,11 @@ a:hover {
 }
 
 body {
+  margin:0 auto;
   font-family: "Lato";
   font-weight: 600;
   font-size: 14px;
-  }
-
+}
 
 ul {
   list-style-type: none;
@@ -68,16 +66,13 @@ h3 {
 }
 
 main {
-  margin-left:10px; 
   padding: 15px 0;
-  background-image: url(/Images/Main_bg.png);
+  background-image: url(Images/Main_bg.png);
   background-repeat: repeat-x;
 }
 
-/* Header */
-
 header {
-  background-image: url(/Images/masthead_background.jpg);
+  background-image: url(Images/masthead_background.jpg);
   background-position: center;
   background-repeat: repeat-x;
   background-color: #f4f2e9;
@@ -94,13 +89,11 @@ header {
 .logo {
   height: 65px;
   padding: 14px 10px;
-  }
+}
 
 .Fav_book_img {
   padding:50px 0 0 88px;
 }
-
-/* Questions Section */
 
 .search_book {
   margin:25px 0;
@@ -125,8 +118,6 @@ header {
   font-family: "Lato";
 }
 
-/* Discovery Section */
-
 .discovery_box {
   border-radius: 10px;
   padding: 15px 0 20px 0;
@@ -142,7 +133,7 @@ header {
   justify-content: space-between;
   height: 170px;
   margin-top: 20px;
-  background-image: url(/Images//discovery_bg.png);
+  background-image: url(Images//discovery_bg.png);
   background-position: bottom;
   background-repeat: repeat-x;
 }
@@ -182,8 +173,6 @@ header {
   font-weight: 900;
 }
 
-/* Search Book Section */
-
 .search_input_container {
   position: relative;
 }
@@ -218,8 +207,6 @@ li {
   line-height: 1.5;
 }
 
-/* Quotes Section */
-
 .quotes {
   margin: 24px 0;
   font-size: 14px;
@@ -228,7 +215,7 @@ li {
 .quotes_container {
   display: flex;
   justify-content: space-between;
-  margin-right: 100px;
+  max-width:80%;
 }
 
 .quote_author {
@@ -246,8 +233,6 @@ li {
   margin-right: 10px;
 }
 
-/* Best Book Award Section */
-
 .best_books {
   margin-bottom: 24px;
 }
@@ -261,7 +246,6 @@ li {
   flex:1;
 }
 
-
 .awards_li {
   margin: 0.5em;
 }
@@ -269,10 +253,6 @@ li {
 .awards_img {
   padding-top: 20px; 
 }
-
-/* Right Section */
-
-/* Sign in section  */
 
 .sign_in_section {
   position: sticky;
@@ -284,13 +264,13 @@ li {
   margin: 16px 16px 0 -16px;
   border: 1px solid rgb(219, 219, 219) ;
   border-radius: 10px;
- } 
+} 
 
- .sign_in_buttons a:hover {
+.sign_in_buttons a:hover {
   text-decoration: none;
- }
+}
 
- .sign_in_header {
+.sign_in_header {
   padding: 4px 0 14px 0;
   text-align: center;  
   font-size: 18px;
@@ -313,14 +293,14 @@ li {
 }
 
 .bg_facebook {
-  background-image: url(/Images/facebook_icon.svg);
+  background-image: url(Images/facebook_icon.svg);
   width: 21px;
   height: 21px;
   margin-right: 8px;
 }
 
 .bg_amazon {
-  background-image: url(/Images/amazon_icon.svg);
+  background-image: url(Images/amazon_icon.svg);
   background-size: 100% 100%;
   margin-right: 8px;
   margin-left: -0.2em;
@@ -329,7 +309,7 @@ li {
 }
 
 .bg_apple {
-  background-image: url(/Images/apple_icon.svg);
+  background-image: url(Images/apple_icon.svg);
   background-position: center;
   width: 31px;
   height: 31px;
@@ -391,12 +371,14 @@ li {
   border-top: 1px solid #D8D8D8;
 }
 
-   /* Ad */
-
 .ad {
-  padding-top: 15px;
+  margin: 15px 0;
+}
+
+.ad_link {
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
+  font-family: "Merriweather";
 }
    
 .right_container {
@@ -409,11 +391,13 @@ li {
   width: 100%;
 }
 
-/* Love lists section */
+.ad_img_container {
+  margin:15px 0;
+}
 
 .love_lists_section {
   width: 300px;
-  margin: 24px 0;
+  margin: 42px 0 24px 0;
   font-size: 14px;
 }
 
@@ -433,7 +417,8 @@ li {
   margin-bottom: 0;
 }
 
-.love_lists_line p {
+.love_lists_line p,
+.ad p {
   margin:0;
   font-size: 11px;
   line-height: 14px;
@@ -451,8 +436,6 @@ li {
 .love_lists_img_container img {
   max-height: 40px;
 }
-
-/* Author and publisher section */
 
 .author_publisher_section {
   width: 300px;
@@ -481,8 +464,6 @@ li {
   
 }
 
-/* Footer */
-
 footer {
   background: #f9f8f4;
   padding-bottom: 32px;
@@ -493,10 +474,11 @@ footer {
 .footer_container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   flex:1;
   max-width: 1220px;
   margin-inline: auto;
+  padding: 0 15px;
 }
 
 .footer_left_part_container {
@@ -508,7 +490,8 @@ footer {
 
 .footer_right_part_container {
   max-width: 50%;
-  padding-left: 200px;
+  flex:1;
+  padding-left: 300px;
 }
 
 .footer_nav {
@@ -521,7 +504,7 @@ footer {
 
 .footer_container a {
   color: #382110;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .footer_nav div {
@@ -529,3 +512,6 @@ footer {
   margin: 8px 0;
 }
 
+.footer_social_media_logos a {
+  margin-right: 8px;
+}
