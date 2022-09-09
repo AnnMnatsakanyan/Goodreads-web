@@ -21,7 +21,7 @@
 }
 
 h1 {
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 p {
@@ -45,7 +45,7 @@ a:hover {
 }
 
 body {
-  margin:0 auto;
+  margin: 0 auto;
   font-family: "Lato";
   font-weight: 600;
   font-size: 14px;
@@ -53,8 +53,13 @@ body {
 
 ul {
   list-style-type: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 h3 {
@@ -66,13 +71,13 @@ h3 {
 }
 
 main {
-  padding: 15px 0;
-  background-image: url(Images/Main_bg.png);
+  padding: 14px 0;
+  background-image: url("Images/Main_bg.png");
   background-repeat: repeat-x;
 }
 
 header {
-  background-image: url(Images/masthead_background.jpg);
+  background-image: url("Images/masthead_background.jpg");
   background-position: center;
   background-repeat: repeat-x;
   background-color: #f4f2e9;
@@ -83,32 +88,27 @@ header {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 10px 5px 0;
-}
-
-.logo {
-  height: 65px;
-  padding: 14px 10px;
+  padding: 10px 6px 0;
 }
 
 .Fav_book_img {
-  padding:50px 0 0 88px;
+  padding: 50px 0 0 88px;
 }
 
 .search_book {
-  margin:25px 0;
+  margin: 24px 0;
 }
 
 .questions_container {
   display: flex;
-  justify-content:flex-start;
-  gap:32px;
-  margin-left:0;
+  justify-content: flex-start;
+  gap: 32px;
+  margin-left: 0;
 }
 
 .question_1,
 .question_2 {
-  width:280px;
+  width: 280px;
 } 
 
 .answer {
@@ -120,12 +120,12 @@ header {
 
 .discovery_box {
   border-radius: 10px;
-  padding: 15px 0 20px 0;
+  padding: 14px 0 20px 0;
   background-color: #f4f2e9;
 }
 
 .discovery h2 {
-  margin: 0 0 15px 15px;
+  margin: 0 0 14px 14px;
 }
 
 .books_container {
@@ -133,7 +133,7 @@ header {
   justify-content: space-between;
   height: 170px;
   margin-top: 20px;
-  background-image: url(Images//discovery_bg.png);
+  background-image: url("Images//discovery_bg.png");
   background-position: bottom;
   background-repeat: repeat-x;
 }
@@ -146,17 +146,17 @@ header {
 .loved_books_container p,
 .discovered_book_container p {
   font-size: 12px;
-  margin:0 0 15px 0;
+  margin: 0 0 16px 0;
 }
 
 .loved_books_container {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 
 .discovery_arrow {
   height: 80px;
-  margin-top:80px;
-  margin-right: 5px;
+  margin-top: 80px;
+  margin-right: 6px;
 }
 
 .discovered_book_container {
@@ -166,7 +166,7 @@ header {
 
 .disovered_book {
   float: left;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .dicovered_book_description {
@@ -178,9 +178,9 @@ header {
 }
 
 input {
-  padding: 5px 24px 5px 5px;
+  padding: 6px 24px 6px 6px;
   margin: 12px 0;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: white;
   width: 300px;
   border: 1px solid #999;
@@ -193,18 +193,13 @@ input:focus {
 .magnifying_glass_container {
   position:absolute;
   right: 326px;
-  bottom:14px;
+  bottom: 14px;
 }
 
 .book_genres {
   display: flex;
   justify-content: space-between;
   margin-right: 82px;
-}
-
-li {
-  font-size: 14px;
-  line-height: 1.5;
 }
 
 .quotes {
@@ -215,7 +210,7 @@ li {
 .quotes_container {
   display: flex;
   justify-content: space-between;
-  max-width:80%;
+  max-width: 80%;
 }
 
 .quote_author {
@@ -247,21 +242,20 @@ li {
 }
 
 .awards_li {
-  margin: 0.5em;
+  margin: 8px;
 }
 
 .awards_img {
   padding-top: 20px; 
 }
 
-.sign_in_section {
-  position: sticky;
+.sign_in_container {
   background-color: white;
   width: 300px;
   display: flex;
   flex-direction: column;
-  padding:24px;
-  margin: 16px 16px 0 -16px;
+  padding: 24px;
+  margin: 26px 20px;
   border: 1px solid rgb(219, 219, 219) ;
   border-radius: 10px;
 } 
@@ -283,8 +277,8 @@ li {
   padding: 8px 12px;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  border-radius: 3px;
+  border: 1px solid black;
+  border-radius: 4px;
   height: 46px;
 }
 
@@ -293,34 +287,34 @@ li {
 }
 
 .bg_facebook {
-  background-image: url(Images/facebook_icon.svg);
-  width: 21px;
-  height: 21px;
+  background-image: url("Images/facebook_icon.svg");
+  width: 20px;
+  height: 20px;
   margin-right: 8px;
 }
 
 .bg_amazon {
-  background-image: url(Images/amazon_icon.svg);
+  background-image: url("Images/amazon_icon.svg");
   background-size: 100% 100%;
   margin-right: 8px;
-  margin-left: -0.2em;
-  height: 21px;
-  width:21px
+  margin-left: -4px;
+  height: 20px;
+  width: 20px
 }
 
 .bg_apple {
-  background-image: url(Images/apple_icon.svg);
+  background-image: url("Images/apple_icon.svg");
   background-position: center;
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   background-size: 100% 100%;
-  margin-left: -1.5em;
+  margin-left: -24px;
 }
 
 .button_facebook {
   background-color: #3b5998;
   border-color: #3b5998;
-  color:white;
+  color: white;
 }
 
 .button_facebook:hover {
@@ -331,7 +325,7 @@ li {
 .button_amazon {
   background-color: #f5d47a;
   border-color: #B38B22;
-  color:black;
+  color: black;
 }
 
 .button_amazon:hover {
@@ -341,13 +335,13 @@ li {
 .button_apple {
   background-color: #fff;
   border: 1px solid #000;
-  color:#000;
+  color: #000;
 }
 
 .button_sign_up {
   background-color: #382110;
   border: 1px solid #382110;
-  color:white;
+  color: white;
 }
 
 .button_sign_up:hover {
@@ -372,7 +366,7 @@ li {
 }
 
 .ad {
-  margin: 15px 0;
+  margin: 14px 0;
 }
 
 .ad_link {
@@ -384,7 +378,7 @@ li {
 .right_container {
   position: relative;
   max-width: 300px;
-  top: -300px;
+  top: 168px;
 }
 
 .ad_img {
@@ -392,7 +386,7 @@ li {
 }
 
 .ad_img_container {
-  margin:15px 0;
+  margin: 14px 0;
 }
 
 .love_lists_section {
@@ -450,11 +444,11 @@ li {
   color: #333333;
   font-size: 11px;
   padding: 4px 12px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 1px solid #D6D0C4;
   background-color: #F4F1EA;
   line-height: 1;
-  margin-left: 15px;
+  margin-left: 14px;
 }
 
 .author_publisher_button:hover {
@@ -475,27 +469,27 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex:1;
+  flex: 1;
   max-width: 1220px;
   margin-inline: auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 .footer_left_part_container {
   max-width: 50%;
   display: flex;
   justify-content: space-between;
-  flex:1;
+  flex: 1;
 }
 
 .footer_right_part_container {
   max-width: 50%;
-  flex:1;
+  flex: 1;
   padding-left: 300px;
 }
 
 .footer_nav {
-  padding:0 15px;
+  padding: 0 16px;
 }
 
 .footer_nav ul {
@@ -514,4 +508,187 @@ footer {
 
 .footer_social_media_logos a {
   margin-right: 8px;
+}
+
+picture {
+  width: 100%;
+}
+
+
+@media (max-width: 960px) {
+  .nav_logo,
+  .Fav_book_img ,
+  .questions,
+  .discovery,
+  .search_book,
+  .best_books,
+  .sign_in_header {
+    display: none;
+  }
+
+  .main_columns_container {
+    display: block;
+  }
+
+  .responsive_max_width {
+    max-width: 424px;
+    margin-inline: auto;
+  }
+
+  header {
+    background-image: none;
+    background-color: white;
+    height: fit-content;
+  }
+
+  .tablet_nav_img,
+  .mobile_nav_img {
+    width: 100%;
+  }
+
+  .responsive_nav_first,
+  .responsive_nav_second,
+  .responsive_nav_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .responsive_nav {
+    background-color: #F4F1EA;
+  }
+
+  .responsive_nav_first {
+    border-bottom: 1px solid rgb(189, 188, 188);
+    padding:0 16px;
+  }
+
+  .responsive_nav_first input {
+    max-width: 55%;
+    flex: 1;
+    margin: 0 16px;
+  }
+
+  .responsive_nav_box {
+    max-width: 30%;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .responsive_nav_logo {
+    background: url("Images/good_reads_logo.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 15%;
+    height: 50px;
+  }
+
+  .responsive_nav_second {
+    margin: 0 auto;
+    max-width: 60%;
+    border-bottom: 1px solid rgb(189, 188, 188);
+  }
+  
+  .responsive_nav a {
+    display: inline-block;
+    color: #382110;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+
+  .responsive_nav a:hover {
+    color: #FFFFFF;
+    background-color: #382110;
+  }
+
+  .sign_in_container {
+    display: block;
+    width: 424px;
+    margin: 10px auto;
+    padding: 0 12px;
+    border: none;
+  }
+
+  .policy,
+  .sign_in {
+    color:black;
+    font-size: 14px;
+    border: none;
+    padding: 12px;
+  }
+
+  main {
+    background-image: none;
+  }
+
+  .sign_in_responsive_heading h2 {
+    font-family: "Merriweather";
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .sign_in_responsive_heading p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    margin: 15px 10px 20px 10px;
+    text-align: center;
+  }
+
+  .responsive_search_book input {
+    width: 90%;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px rgb(0 0 0 / 25%);
+    color: #181818;
+    padding-left: 30px;
+    margin: 0px 20px;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .responsive_search_icon {
+    position: absolute;
+    top: 8px;
+    left: 26px;
+  }  
+
+  .resp_search_book_container {
+      width: 100%;
+      position: relative;
+  }
+
+  .responsive_lists_container {
+    margin-top: 26px;
+  }
+
+  .book_list_container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .book_list_container a img {
+    width: 140px;
+    height: 200px;
+    margin: 8px;
+  }
+} 
+
+@media (min-width: 961px) {
+  .tablet_nav_img,
+  .mobile_nav_img,
+  .responsive_nav,
+  .sign_in_responsive_heading,
+  .responsive_search_book,
+  .responsive_lists {
+    display: none;
+  }
+
 }

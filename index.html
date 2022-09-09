@@ -10,17 +10,64 @@
 </head>
 <body>
   <header class="wrapper">
+    <img class="tablet_nav_img" src="Images/tablet_nav_img.jpg">
+    <img class="mobile_nav_img" src="Images/mobile_nav_img.jpg">
     <div class="max_width_container">
-      <div class="logo">
-        <a href="https://www.goodreads.com/">
+      <nav>
+        <div class="responsive_nav">
+          <div class="responsive_nav_first">
+            <a class="responsive_nav_logo" href="#"></a>
+            <input type="text" placeholder="Search books">
+            <div class="responsive_nav_box">
+              <a href="#"> Sign In </a>
+              <a href="#"> Join </a>
+            </div>  
+          </div>
+            <div class="responsive_nav_second">  
+              <a href="#"> Home </a>
+              <a href="#"> My Books </a>
+              <a href="#"> Browse </a>
+              <a href="#"> Community  </a>
+            </div> 
+        </div>  
+        <a class="nav_logo" href="https://www.goodreads.com/">
           <img src="Images/good_reads_logo.png" alt="Good Reads">
         </a>
-      </div>
+      </nav>
         <div class="header_content">
           <div class="Fav_book_img">
-            <img src="Images/Fav_book_img.png" alt="Meet your favorite book>">
+            <img src="Images/Fav_book_img.png" alt="Meet your favorite book">
           </div>
-        </div>    
+          <div class="sign_in_container">
+            <div class="sign_in_responsive_heading">
+              <h2>Meet your next favorite book.</h2>
+              <p>Find and read more books you’ll love. Be part of Goodreads, the world’s largest community for readers like you.</p>
+            </div>
+            <h2 class="sign_in_header"> Discover & read more </h2>
+            <div class="sign_in_buttons">
+              <a href="#" class="button button_facebook">
+                <i class="icon_container bg_facebook"> </i>
+                  Continue with Facebook </a>
+              <a href="#" class="button button_amazon"> 
+                <i class="icon_container bg_amazon"> </i>
+                  Continue with Amazon </a>
+              <a href="#" class="button button_apple">
+                <i class="icon_container bg_apple"></i>
+                  Continue with Apple </a>
+              <a href="#" class="button button_sign_up"> Sign up with email </a>
+              </div>
+            <div class="policy">
+              By creating an account, you agree to the Goodreads 
+              <a href="#"> Terms of Service </a> 
+              and 
+              <a href="#">Privacy Policy. </a>
+            </div>
+            <div class="sign_in">
+              Already a member? 
+              <a href="#"> Sign In </a>
+            </div>
+          </div>
+        </div>     
     </div>
   </header>
   <main class="wrapper">
@@ -101,6 +148,60 @@
                 </div>  
               </div>
             </div>  
+        </section>
+        <section class="responsive_search_book responsive_max_width">
+          <div class="resp_search_book_container">
+            <input type="text" placeholder="Search books and authors">
+            <div class="responsive_search_icon"> 
+              <img src="Images/responsive_search_icon.png">
+            </div>
+          </div>
+        </section>
+        <section class="responsive_lists responsive_max_width">
+          <div class="responsive_lists_container">
+            <div class="responsive_list_box">
+              <h2>MOST READ THIS WEEK</h2>
+                <div class="book_list_container">
+                  <a href="#">
+                    <img src="Images/most_read_1.jpg">
+                  </a>
+                  <a href="#">
+                    <img src="Images/most_read_2.jpg">
+                  </a>
+                  <a href="#">
+                    <img src="Images/most_read_3.jpg">
+                  </a>
+                </div>  
+            </div>
+            <div class="responsive_list_box">
+              <h2>NEW RELEASES THIS MONTH</h2>
+                <div class="book_list_container">
+                  <a href="#">
+                    <img src="Images/new_release_1.jpg">
+                  </a>
+                  <a href="#">
+                    <img src="Images/new_release_2.jpg">
+                  </a>
+                  <a href="#">
+                    <img src="Images/new_release_3.jpg">
+                  </a>
+                </div>  
+            </div>
+            <div class="responsive_list_box">
+              <h2>LISTS</h2>
+                <div class="book_list_container">
+                  <a href="#">
+                    <img src="Images/list_1.jpg">
+                  </a>
+                  <a href="#">
+                    <img src="Images/list_2.jpg">
+                  </a>
+                  <a href="#">
+                    <img src="Images/list_3.jpg">
+                  </a>
+                </div>  
+            </div>
+          </div>
         </section>
         <section class="search_book">
             <h2>Search and browse books</h2>
@@ -324,31 +425,6 @@
         </section>
       </div>
     <div class="right_container">
-        <section class="sign_in_section">
-          <h2 class="sign_in_header"> Discover & read more </h2>
-          <div class="sign_in_buttons">
-            <a href="#" class="button button_facebook">
-              <i class="icon_container bg_facebook"> </i>
-                Continue with Facebook </a>
-            <a href="#" class="button button_amazon"> 
-              <i class="icon_container bg_amazon"> </i>
-                Continue with Amazon </a>
-            <a href="#" class="button button_apple">
-              <i class="icon_container bg_apple"></i>
-                Continue with Apple </a>
-            <a href="#" class="button button_sign_up"> Sign up with email </a>
-            </div>
-          <div class="policy">
-            By creating an account, you agree to the Goodreads 
-            <a href="#"> Terms of Service </a> 
-            and 
-            <a href="#">Privacy Policy. </a>
-          </div>
-          <div class="sign_in">
-            Already a member? 
-            <a href="#"> Sign In </a>
-          </div>
-        </section> 
         <section class="ad">
           <h2>News & Interviews</h2>
           <a href="#" class="ad_link">
